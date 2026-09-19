@@ -20,7 +20,7 @@ export function QuoteBand() {
             {words.map((w, i) => (
               <span key={i} className="qw" style={{ ["--qw-delay" as string]: `${i * 18}ms` }}>
                 {w}
-                {i < words.length - 1 ? "\u00A0" : ""}
+                {i < words.length - 1 ? " " : ""}
               </span>
             ))}
           </p>

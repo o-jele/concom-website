@@ -71,10 +71,6 @@ export function Footer() {
                 <Icon name="phone" className="h-4 w-4 text-ochre" />
                 {partner.phone}
               </a>
-              <a href={`mailto:${partner.email}`} className="flex items-center gap-2.5 transition-colors hover:text-cream">
-                <Icon name="mail" className="h-4 w-4 text-ochre" />
-                {partner.email}
-              </a>
               <a href={`mailto:${site.email}`} className="flex items-center gap-2.5 transition-colors hover:text-cream">
                 <Icon name="mail" className="h-4 w-4 text-ochre" />
                 {site.email}
@@ -125,11 +121,11 @@ export function Footer() {
         {/* compliance */}
         <div className="rule border-cream/15 grid gap-6 py-10 sm:grid-cols-3" data-reveal>
           {site.compliance.map((c) => (
-            <div key={c.label} className="flex items-baseline justify-between gap-4 sm:block">
-              <span className="text-xs uppercase tracking-[0.14em] text-cream/50">
+            <div key={c.label}>
+              <p className="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-cream/50">
                 {c.label}
-              </span>
-              <span className="font-display text-2xl italic text-cream">{c.value}</span>
+              </p>
+              <p className="mt-1.5 font-display text-base italic text-cream">{c.value}</p>
             </div>
           ))}
         </div>

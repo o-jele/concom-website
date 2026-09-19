@@ -70,9 +70,9 @@ export function SplitWords({
               className={cn(w.italic && "italic")}
             >
               {w.text}
-              {i < words.length - 1 ? "\u00A0" : ""}
             </span>
           </span>
+          {i < words.length - 1 ? " " : ""}
         </span>
       ))}
     </Tag>

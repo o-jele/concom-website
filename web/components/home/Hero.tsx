@@ -70,13 +70,13 @@ export function Hero() {
       <div className="wrap pb-10" data-reveal style={{ ["--reveal-delay" as string]: "760ms" }}>
         <dl className="rule grid grid-cols-2 gap-x-8 gap-y-8 pt-8 lg:grid-cols-4">
           {facts.map((f) => (
-            <div key={f.label}>
-              <dt className="order-2 mt-2 block text-[0.8rem] leading-snug text-ink-soft">
-                {f.label}
-              </dt>
+            <div key={f.label} className="flex flex-col">
               <dd className="font-display text-3xl font-light italic text-green dark:text-green-bright lg:text-4xl">
                 {f.value}
               </dd>
+              <dt className="mt-2 block text-[0.8rem] leading-snug text-ink-soft">
+                {f.label}
+              </dt>
             </div>
           ))}
         </dl>
