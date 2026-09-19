@@ -22,7 +22,7 @@ const plex = IBM_Plex_Sans({
   display: "swap",
 });
 
-const themeInit = `(function(){try{var t=localStorage.getItem("theme");var d=t?t==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;var r=document.documentElement;r.classList.toggle("dark",d);r.style.colorScheme=d?"dark":"light";}catch(e){}})();`;
+const themeInit = `(function(){try{var t=localStorage.getItem("theme");var d=t?t==="dark":false;var r=document.documentElement;r.classList.toggle("dark",d);r.style.colorScheme=d?"dark":"light";}catch(e){}})();`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
