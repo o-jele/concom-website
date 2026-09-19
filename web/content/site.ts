@@ -47,7 +47,7 @@ export const facts = [
   { value: "2007", label: "Operating since", numeric: true },
   { value: "Lilongwe, Malawi", label: "Based in", numeric: false },
   { value: "4", label: "Sectors served: public, private, NGO, diplomatic", numeric: true },
-  { value: "3", label: "Legal compliance: Registrar General, MRA, ODPP", numeric: true },
+  { value: "3", label: "Compliance: Registrar General, MRA, ODPP", numeric: true },
 ];
 
 export const clients = [
