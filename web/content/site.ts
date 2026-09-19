@@ -15,7 +15,7 @@ export const site = {
   socials: [] as { label: string; href: string }[],
   compliance: [
     { label: "Registrar of Companies", value: "BRNR-YJPCGBJ5" },
-    { label: "Malawi Revenue Authority TPIN", value: "31255294" },
+    { label: "Malawi Revenue Authority", value: "TPIN 31255294" },
     { label: "Office of the Director of Public Procurement", value: "31255294" },
   ],
 };
@@ -46,8 +46,8 @@ export const partner = {
 export const facts = [
   { value: "2007", label: "Operating since", numeric: true },
   { value: "Lilongwe, Malawi", label: "Based in", numeric: false },
-  { value: "4", label: "Sectors served — public, private, NGO, diplomatic", numeric: true },
-  { value: "3", label: "Registrations — Registrar, MRA, ODPP", numeric: true },
+  { value: "4", label: "Sectors served: public, private, NGO, diplomatic", numeric: true },
+  { value: "3", label: "Legal compliance: Registrar General, MRA, ODPP", numeric: true },
 ];
 
 export const clients = [
