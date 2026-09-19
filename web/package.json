@@ -1,0 +1,28 @@
+{
+  "name": "concom-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ConCom PR & Publicity — corporate communications agency, Lilongwe, Malawi",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "assets": "node scripts/generate-assets.mjs"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "lenis": "^1.3.4",
+    "next": "^15.4.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "sharp": "^0.34.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.6.0"
+  }
+}
