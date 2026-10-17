@@ -29,7 +29,7 @@ export default function WorkPage() {
           </div>
           <SplitWords
             as="h1"
-            className="h-display mt-8 max-w-4xl"
+            className="h-display mt-8 max-w-4xl text-[clamp(2.4rem,5.6vw,4.9rem)]"
             words={[{ text: "Selected" }, { text: "assignments.", italic: true }]}
           />
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-ink-soft" data-reveal>

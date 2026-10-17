@@ -101,11 +101,11 @@ export default function AboutPage() {
         <div className="wrap mt-16" data-reveal>
           <dl className="rule grid grid-cols-2 gap-x-8 gap-y-8 pt-8 lg:grid-cols-4">
             {facts.map((f) => (
-              <div key={f.label}>
-                <dd className="font-display text-3xl font-light italic text-green dark:text-green-bright lg:text-4xl">
+              <div key={f.label} className="flex flex-col justify-end">
+                <dt className="block text-[0.8rem] leading-snug text-ink-soft">{f.label}</dt>
+                <dd className="mt-2 font-display text-3xl font-light italic text-green dark:text-green-bright lg:text-4xl">
                   {f.value}
                 </dd>
-                <dt className="mt-2 block text-[0.8rem] leading-snug text-ink-soft">{f.label}</dt>
               </div>
             ))}
           </dl>
